@@ -1,5 +1,7 @@
 {
   "variants": {
-    "": { "model": "schoolseasons:block/test_block" }
+    "": {
+      "model": "schoolseasons:block/test_block"
+    }
   }
 }

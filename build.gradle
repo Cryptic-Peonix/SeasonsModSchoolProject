@@ -45,7 +45,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                examplemod {
+                schoolseasons {
                     source sourceSets.main
                 }
             }
