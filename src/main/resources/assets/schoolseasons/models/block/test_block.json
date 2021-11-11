@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "schoolseasons:blocks/test_block"
+    "all": "schoolseasons:blocks/test_bloc"
   }
 }
