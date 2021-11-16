@@ -2,10 +2,9 @@ package me.connor.schoolseasons.core.init;
 
 import me.connor.schoolseasons.Reference;
 import me.connor.schoolseasons.core.blocks.ModSaplingBlock;
-import me.connor.schoolseasons.core.world.feature.TestTree;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.SoundType;
+import me.connor.schoolseasons.core.world.feature.tree.RedwoodTree;
+import me.connor.schoolseasons.core.world.feature.tree.TestTree;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -36,6 +35,12 @@ public class BlockInit {
             ItemGroup.BUILDING_BLOCKS, 64);
 
     public static final Block TEST_SAPLING = register(new ResourceLocation(Reference.MOD_ID, "test_sapling"), new ModSaplingBlock(TestTree::new, Block.Properties.from(Blocks.ACACIA_SAPLING)), ItemGroup.DECORATIONS, 64);
+
+    public static final Block REDWOOD_LOG = register(new ResourceLocation(Reference.MOD_ID, "redwood_log"), new RotatedPillarBlock(Block.Properties.from(Blocks.OAK_LOG)), ItemGroup.BUILDING_BLOCKS, 64);
+
+    public static final Block REDWOOD_LEAVES = register(new ResourceLocation(Reference.MOD_ID, "redwood_leaves"), new LeavesBlock(Block.Properties.from(Blocks.OAK_LEAVES)), ItemGroup.DECORATIONS, 64);
+
+    public static final Block REDWOOD_SAPLING  = register(new ResourceLocation(Reference.MOD_ID, "redwood_sapling"), new ModSaplingBlock(RedwoodTree::new, Block.Properties.from(Blocks.OAK_SAPLING)), ItemGroup.DECORATIONS, 64);
 
     // Create Constructor and add blocks/block items to their lists
     private static Block register(ResourceLocation key, Block block, ItemGroup group, int itemMaxStackSize) {

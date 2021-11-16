@@ -1,11 +1,8 @@
 package me.connor.schoolseasons.core.world.biomes;
 
-import me.connor.schoolseasons.core.world.feature.ModBiomeFeatures;
+import me.connor.schoolseasons.core.world.feature.biome.ModBiomeFeatures;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
-import net.minecraft.world.gen.GenerationStage;
-import net.minecraft.world.gen.carver.CanyonWorldCarver;
-import net.minecraft.world.gen.feature.ProbabilityConfig;
 
 public class TestBiome extends Biome {
 

@@ -25,6 +25,8 @@ public class BiomeInit {
                     Blocks.DIRT.getDefaultState(), Blocks.ANDESITE.getDefaultState())).category(Biome.Category.FOREST)
             .scale(0.1F).downfall(0.7F).depth(0.1F)));
 
+
+
     public static void registerBiomes() {
         registerBiome(TEST_BIOME.get(), 5, BiomeDictionary.Type.OVERWORLD, BiomeDictionary.Type.FOREST);
     }
