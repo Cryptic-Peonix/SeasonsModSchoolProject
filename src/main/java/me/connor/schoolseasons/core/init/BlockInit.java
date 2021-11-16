@@ -1,7 +1,10 @@
 package me.connor.schoolseasons.core.init;
 
 import me.connor.schoolseasons.Reference;
+import me.connor.schoolseasons.core.blocks.ModSaplingBlock;
+import me.connor.schoolseasons.core.world.feature.TestTree;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
@@ -26,12 +29,13 @@ public class BlockInit {
     // Create List for BlockItems
     private static final List<Item> ITEMS = new ArrayList<>();
 
-    private static Object AbstractBlock;
     // Blocks
     public static final Block TEST_BLOCK = register(new ResourceLocation(Reference.MOD_ID, "test_block"),
             new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5f, 6f)
                     .harvestTool(ToolType.PICKAXE).harvestLevel(0).sound(SoundType.STONE)),
             ItemGroup.BUILDING_BLOCKS, 64);
+
+    public static final Block TEST_SAPLING = register(new ResourceLocation(Reference.MOD_ID, "test_sapling"), new ModSaplingBlock(TestTree::new, Block.Properties.from(Blocks.ACACIA_SAPLING)), ItemGroup.DECORATIONS, 64);
 
     // Create Constructor and add blocks/block items to their lists
     private static Block register(ResourceLocation key, Block block, ItemGroup group, int itemMaxStackSize) {
