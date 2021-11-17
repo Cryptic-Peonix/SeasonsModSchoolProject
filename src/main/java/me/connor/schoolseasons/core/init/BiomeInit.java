@@ -21,8 +21,8 @@ public class BiomeInit {
 
     public static final RegistryObject<Biome> TEST_BIOME = BIOMES.register("test_biome", () -> new TestBiome(new Biome.
             Builder().waterColor(65328).waterFogColor(65366).precipitation(Biome.RainType.SNOW).temperature(0.5F).
-            surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(Blocks.GRANITE.getDefaultState(),
-                    Blocks.DIRT.getDefaultState(), Blocks.ANDESITE.getDefaultState())).category(Biome.Category.FOREST)
+            surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(Blocks.GRASS_BLOCK.getDefaultState(),
+                    Blocks.GRANITE.getDefaultState(), Blocks.ANDESITE.getDefaultState())).category(Biome.Category.FOREST)
             .scale(0.1F).downfall(0.7F).depth(0.1F)));
 
 

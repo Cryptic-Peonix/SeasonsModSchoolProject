@@ -8,7 +8,7 @@ public class TestBiome extends Biome {
 
     public TestBiome(Builder biomeBuilder) {
         super(biomeBuilder);
-        ModBiomeFeatures.addTestTrees(this);
+        ModBiomeFeatures.addRedwoodTrees(this);
         DefaultBiomeFeatures.addCarvers(this);
         DefaultBiomeFeatures.addDefaultFlowers(this);
         DefaultBiomeFeatures.addExtraReedsPumpkinsCactus(this);

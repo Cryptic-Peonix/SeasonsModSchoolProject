@@ -67,13 +67,13 @@ public abstract class MassiveTreesFeature<T extends BaseTreeFeatureConfig> exten
         if (isSoil(worldIn, blockPos, sapling) && pos.getY() >= 2) {
             setDirtAt(worldIn, blockPos, pos);
             setDirtAt(worldIn, blockPos.east(), pos);
-            setDirtAt(worldIn, blockPos.east(2), pos);
+            setDirtAt(worldIn, blockPos.west(), pos);
             setDirtAt(worldIn, blockPos.south(), pos);
-            setDirtAt(worldIn, blockPos.south(2), pos);
+            setDirtAt(worldIn, blockPos.north(), pos);
             setDirtAt(worldIn, blockPos.east().south(), pos);
-            setDirtAt(worldIn, blockPos.east(2).south(), pos);
-            setDirtAt(worldIn, blockPos.east().south(2), pos);
-            setDirtAt(worldIn, blockPos.east(2).south(2), pos);
+            setDirtAt(worldIn, blockPos.west().south(), pos);
+            setDirtAt(worldIn, blockPos.east().north(), pos);
+            setDirtAt(worldIn, blockPos.west().north(), pos);
             return true;
         } else {
             return false;
