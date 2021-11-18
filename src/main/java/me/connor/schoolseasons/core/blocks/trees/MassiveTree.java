@@ -20,8 +20,8 @@ public abstract class MassiveTree extends Tree {
     protected abstract ConfiguredFeature<MassiveTreeFeatureConfig, ?> getMassiveTreeFeature(Random rand);
 
     public boolean place(IWorld worldIn, ChunkGenerator<?> chunkGenerator, BlockPos blockPos, BlockState state, Random rand) {
-        for( int i = 0; i >= -2; i--) {
-            for(int j = 0; j >= -2; j--) {
+        for( int i = 0; i >= -1; i--) {
+            for(int j = 0; j >= -1; j--) {
                 if (canMassiveTreeSpawnAt(state, worldIn, blockPos, i, j)) {
                     return this.growMassiveTree(worldIn, chunkGenerator, blockPos, state, rand, i, j);
                 }

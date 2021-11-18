@@ -27,7 +27,7 @@ public class ModBiomeFeatures {
     }
 
     public static void addRedwoodTrees(Biome biomein) {
-        biomein.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModFeatures.MASSIVE_REDWOOD_TREE.withConfiguration(MASSIVE_REDWOOD_TREE_CONFIG).withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(3, 1f, 1))));
+        biomein.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, ModFeatures.MASSIVE_REDWOOD_TREE.withConfiguration(MASSIVE_REDWOOD_TREE_CONFIG));
         //biomein.addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.NORMAL_TREE.withConfiguration(REDWOOD_TREE_CONFIG).withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(3, 1f, 1))));
     }
 }

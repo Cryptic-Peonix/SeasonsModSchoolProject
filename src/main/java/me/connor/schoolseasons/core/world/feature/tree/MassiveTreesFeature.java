@@ -41,7 +41,7 @@ public abstract class MassiveTreesFeature<T extends BaseTreeFeatureConfig> exten
      * @param height The height of the tree
      * @return True if it can grow, false if it cant
      */
-    private boolean isSapceAt(IWorldGenerationBaseReader worldIn, BlockPos leavesPos, int height) {
+    private boolean isSpaceAt(IWorldGenerationBaseReader worldIn, BlockPos leavesPos, int height) {
         boolean canGrow = true;
         if (leavesPos.getY() >= 1 && leavesPos.getY() + height + 1 <= worldIn.getMaxHeight()) {
             for (int i = 0; i <= 1 + height; i++) {
@@ -81,7 +81,7 @@ public abstract class MassiveTreesFeature<T extends BaseTreeFeatureConfig> exten
     }
 
     protected boolean hasRoom(IWorldGenerationReader world, BlockPos pos, int height, BaseTreeFeatureConfig config) {
-        return this.isSapceAt(world, pos, height) && this.validSoil(world, pos, config.getSapling());
+        return this.isSpaceAt(world, pos, height) && this.validSoil(world, pos, config.getSapling());
     }
 
     protected void func_227255_a_(IWorldGenerationReader reader, Random rand, BlockPos pos, int integer, Set<BlockPos> blockSet, MutableBoundingBox boundBox, BaseTreeFeatureConfig config) {
