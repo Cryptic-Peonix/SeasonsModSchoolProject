@@ -5,7 +5,6 @@ import me.connor.schoolseasons.Reference;
 import me.connor.schoolseasons.core.world.biomes.TestBiome;
 import net.minecraft.block.Blocks;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.biome.provider.BiomeProvider;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
 import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
