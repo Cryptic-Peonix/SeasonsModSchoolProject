@@ -28,7 +28,7 @@ public class ModSaplingBlock extends BushBlock implements IGrowable {
 
     public ModSaplingBlock(Supplier<Tree> treeIn, Properties properties) {
         super(properties);
-        this.tree = treeIn;
+        this.tree =treeIn;
     }
 
     @Override
@@ -47,7 +47,7 @@ public class ModSaplingBlock extends BushBlock implements IGrowable {
         }
     }
 
-    public void grow(ServerWorld worldIn, BlockPos pos, BlockState state, Random rand) {
+    public void func_226942_a_(ServerWorld worldIn, BlockPos pos, BlockState state, Random rand) {
         if(state.get(STAGE) == 0) {
             worldIn.setBlockState(pos, state.cycle(STAGE), 4);
         } else {
@@ -59,11 +59,6 @@ public class ModSaplingBlock extends BushBlock implements IGrowable {
     }
 
     @Override
-    public void grow(ServerWorld worldIn, Random rand, BlockPos pos, BlockState state) {
-        this.grow(worldIn, pos, state, rand);
-    }
-
-    @Override
     public boolean canGrow(IBlockReader worldIn, BlockPos pos, BlockState state, boolean isClient) {
         return true;
     }
@@ -71,6 +66,11 @@ public class ModSaplingBlock extends BushBlock implements IGrowable {
     @Override
     public boolean canUseBonemeal(World worldIn, Random rand, BlockPos pos, BlockState state) {
         return (double) worldIn.rand.nextFloat() < 0.45D;
+    }
+
+    @Override
+    public void grow(ServerWorld worldIn, Random rand, BlockPos pos, BlockState state) {
+        this.func_226942_a_(worldIn, pos, state, rand);
     }
 
     @Override
