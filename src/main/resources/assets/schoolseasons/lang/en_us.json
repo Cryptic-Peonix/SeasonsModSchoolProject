@@ -1,3 +1,11 @@
 {
-"block.schoolseasons.test_block": "Bunn"
+  "block.schoolseasons.test_block": "Bunn",
+  "block.schoolseasons.redwood_log": "Redwood Log",
+  "block.schoolseasons.redwood_leaves": "Redwood Leaves",
+  "block.schoolseasons.redwood_sapling": "Redwood Sapling",
+  "block.schoolseasons.redwood_planks": "Redwood Planks",
+  "block.schoolseasons.redwood_leaf_carpet": "Leaf Carpet",
+
+
+  "biome.schoolseasons.test_biome": "Test Biome"
 }

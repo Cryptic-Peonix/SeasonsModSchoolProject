@@ -1,0 +1,7 @@
+{
+  "parent": "block/carpet",
+  "textures": {
+    "particle": "schoolseasons:blocks/redwood_leaves",
+    "wool": "schoolseasons:blocks/leaf_carpet"
+  }
+}
