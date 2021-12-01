@@ -1,5 +1,6 @@
 package me.connor.schoolseasons.core.blocks;
 
+import me.connor.schoolseasons.core.init.BlockInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -28,6 +29,12 @@ public class LeafCarpetBlock extends Block {
     }
 
     public boolean isValidPosition(BlockState state, IWorldReader worldIn, BlockPos pos) {
-        return !worldIn.isAirBlock(pos.down());
+        BlockPos blockpos = pos.down();
+        return this.isValidGround(worldIn.getBlockState(blockpos), worldIn, blockpos);
+    }
+
+    private boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
+        Block block = state.getBlock();
+        return block != this || block != Blocks.WATER || block != Blocks.LAVA || block != Blocks.AIR;
     }
 }
