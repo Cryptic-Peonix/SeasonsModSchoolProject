@@ -48,6 +48,10 @@ public class BlockInit {
 
     public static final Block REDWOOD_LEAF_CARPET = register("redwood_leaf_carpet", new LeafCarpetBlock(Block.Properties.create(Material.LEAVES, MaterialColor.GRASS).hardnessAndResistance(0.1f).sound(SoundType.PLANT)), ItemGroup.DECORATIONS, 64);
 
+    public static final Block LOAMY_GRASS_BLOCK = register("loamy_grass_block", new GrassBlock(Block.Properties.from(Blocks.GRASS_BLOCK)), ItemGroup.BUILDING_BLOCKS, 64);
+
+    public static  final Block LOAMY_DIRT = register("loamy_dirt", new Block(Block.Properties.from(Blocks.DIRT)), ItemGroup.BUILDING_BLOCKS, 64);
+
     // Create Constructor and add blocks/block items to their lists
     private static Block register(String name, Block block, ItemGroup group, int itemMaxStackSize) {
         ResourceLocation key = new ResourceLocation(Reference.MOD_ID, name);

@@ -5,7 +5,9 @@
   "block.schoolseasons.redwood_sapling": "Redwood Sapling",
   "block.schoolseasons.redwood_planks": "Redwood Planks",
   "block.schoolseasons.redwood_leaf_carpet": "Leaf Carpet",
+  "block.schoolseasons.loamy_grass_block": "Loamy Grass Block",
+  "block.schoolseasons.loamy_dirt": "Loamy Dirt",
 
-
-  "biome.schoolseasons.test_biome": "Test Biome"
+  "biome.schoolseasons.test_biome": "SchoolSeasons Test Biome",
+  "biome.schoolseasons.redwood_forest": "Redwood Forest"
 }

@@ -3,6 +3,7 @@ package me.connor.schoolseasons.core.blocks;
 import java.util.Random;
 import java.util.function.Supplier;
 
+import me.connor.schoolseasons.core.init.BlockInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -84,7 +85,8 @@ public class ModSaplingBlock extends BushBlock implements IGrowable {
         Block block = state.getBlock();
         return block == Blocks.DIRT
                 || block == Blocks.GRASS_BLOCK || block == Blocks.COARSE_DIRT || block == Blocks.PODZOL
-                || block == Blocks.MYCELIUM || block == Blocks.GRANITE;
+                || block == Blocks.MYCELIUM || block == Blocks.GRANITE || block == BlockInit.LOAMY_GRASS_BLOCK
+                || block == BlockInit.LOAMY_DIRT;
     }
 
 }

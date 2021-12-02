@@ -35,6 +35,6 @@ public class LeafCarpetBlock extends Block {
 
     private boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
         Block block = state.getBlock();
-        return block != this || block != Blocks.WATER || block != Blocks.LAVA || block != Blocks.AIR;
+        return block == Blocks.GRASS_BLOCK || block == Blocks.DIRT || block == BlockInit.LOAMY_GRASS_BLOCK || block == BlockInit.LOAMY_DIRT;
     }
 }
