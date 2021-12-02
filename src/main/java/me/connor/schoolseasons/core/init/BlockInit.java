@@ -2,6 +2,8 @@ package me.connor.schoolseasons.core.init;
 
 import me.connor.schoolseasons.Reference;
 import me.connor.schoolseasons.core.blocks.LeafCarpetBlock;
+import me.connor.schoolseasons.core.blocks.LoamyGrassBlock;
+import me.connor.schoolseasons.core.blocks.ModDirtBlock;
 import me.connor.schoolseasons.core.blocks.ModSaplingBlock;
 import me.connor.schoolseasons.core.world.feature.tree.RedwoodTree;
 import me.connor.schoolseasons.core.world.feature.tree.TestTree;
@@ -34,7 +36,7 @@ public class BlockInit {
     public static final Block TEST_BLOCK = register( "test_block",
             new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(5f, 6f)
                     .harvestTool(ToolType.PICKAXE).harvestLevel(0).sound(SoundType.STONE)),
-            ItemGroup.BUILDING_BLOCKS, 64);
+            ItemGroup.BUILDING_BLOCKS, 1);
 
     public static final Block TEST_SAPLING = register("test_sapling", new ModSaplingBlock(TestTree::new, Block.Properties.from(Blocks.ACACIA_SAPLING)), ItemGroup.DECORATIONS, 64);
 
@@ -48,9 +50,9 @@ public class BlockInit {
 
     public static final Block REDWOOD_LEAF_CARPET = register("redwood_leaf_carpet", new LeafCarpetBlock(Block.Properties.create(Material.LEAVES, MaterialColor.GRASS).hardnessAndResistance(0.1f).sound(SoundType.PLANT)), ItemGroup.DECORATIONS, 64);
 
-    public static final Block LOAMY_GRASS_BLOCK = register("loamy_grass_block", new GrassBlock(Block.Properties.from(Blocks.GRASS_BLOCK)), ItemGroup.BUILDING_BLOCKS, 64);
+    public static final Block LOAMY_GRASS_BLOCK = register("loamy_grass_block", new LoamyGrassBlock(Block.Properties.from(Blocks.GRASS_BLOCK)), ItemGroup.BUILDING_BLOCKS, 64);
 
-    public static  final Block LOAMY_DIRT = register("loamy_dirt", new Block(Block.Properties.from(Blocks.DIRT)), ItemGroup.BUILDING_BLOCKS, 64);
+    public static  final Block LOAMY_DIRT = register("loamy_dirt", new ModDirtBlock(Block.Properties.from(Blocks.DIRT)), ItemGroup.BUILDING_BLOCKS, 64);
 
     // Create Constructor and add blocks/block items to their lists
     private static Block register(String name, Block block, ItemGroup group, int itemMaxStackSize) {

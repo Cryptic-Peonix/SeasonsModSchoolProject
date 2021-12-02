@@ -26,7 +26,7 @@ public class BiomeInit {
             .scale(0.1F).downfall(0.7F).depth(0.1F)));
 
     public static final RegistryObject<Biome> REDWOOD_FOREST = BIOMES.register("redwood_forest", () -> new RedwoodForest(new Biome.Builder()
-            .waterColor(159132).waterFogColor(2678144).precipitation(Biome.RainType.SNOW).temperature(0.5f).surfaceBuilder(SurfaceBuilder.DEFAULT,
+            .waterColor(159132).waterFogColor(2678144).precipitation(Biome.RainType.SNOW).temperature(0.2f).surfaceBuilder(SurfaceBuilder.DEFAULT,
                     new SurfaceBuilderConfig(BlockInit.LOAMY_GRASS_BLOCK.getDefaultState(), BlockInit.LOAMY_DIRT.getDefaultState(), Blocks.GRANITE.getDefaultState()))
             .category(Biome.Category.FOREST).scale(0.2F).downfall(1F).depth(0.2f)));
 
