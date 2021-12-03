@@ -9,6 +9,8 @@ import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.feature.structure.MineshaftConfig;
 import net.minecraft.world.gen.feature.structure.MineshaftStructure;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class RedwoodForest extends Biome {
 
@@ -19,6 +21,7 @@ public class RedwoodForest extends Biome {
         ModBiomeFeatures.addRedwoodLeafCarpets(this);
         ModBiomeFeatures.addRedwoodTrees(this);
         ModBiomeFeatures.addMilkmaidFlowers(this);
+        ModBiomeFeatures.addLoamyDirtPatches(this);
         DefaultBiomeFeatures.addCarvers(this);
         DefaultBiomeFeatures.addSprings(this);
         DefaultBiomeFeatures.addOres(this);
@@ -33,5 +36,11 @@ public class RedwoodForest extends Biome {
         this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(EntityType.SKELETON, 100, 4, 4));
         this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(EntityType.CREEPER, 100, 4, 4));
         this.addSpawn(EntityClassification.MONSTER, new Biome.SpawnListEntry(EntityType.ENDERMAN, 20, 1, 4));
+    }
+
+    @Override
+    @OnlyIn(Dist.CLIENT)
+    public int getGrassColor(double posX, double posZ) {
+        return 7918186;
     }
 }

@@ -56,8 +56,6 @@ public class BlockInit {
 
     public static final Block MILKMAID = register("milkmaid", new FlowerBlock(Effects.GLOWING, 10, Block.Properties.from(Blocks.AZURE_BLUET)), ItemGroup.DECORATIONS, 16);
 
-    public static final Block REDWOOD_CRAFTING_TABLE = register("redwood_crafting_table", new ModCraftingTableBlock(Block.Properties.from(Blocks.CRAFTING_TABLE)), ItemGroup.DECORATIONS, 64);
-
     // Create Constructor and add blocks/block items to their lists
     private static Block register(String name, Block block, ItemGroup group, int itemMaxStackSize) {
         ResourceLocation key = new ResourceLocation(Reference.MOD_ID, name);
