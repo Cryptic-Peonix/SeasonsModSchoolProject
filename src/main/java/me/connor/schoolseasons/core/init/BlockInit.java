@@ -43,6 +43,8 @@ public class BlockInit {
 
     public static final Block REDWOOD_LOG = register("redwood_log", new LogBlock(MaterialColor.RED_TERRACOTTA, Block.Properties.from(Blocks.OAK_LOG)), ItemGroup.BUILDING_BLOCKS, 64);
 
+    public static final Block REDWOOD_WOOD = register("redwood_wood", new RotatedPillarBlock(Block.Properties.from(Blocks.OAK_WOOD)), ItemGroup.BUILDING_BLOCKS, 64);
+
     public static final Block REDWOOD_LEAVES = register("redwood_leaves", new LeavesBlock(Block.Properties.from(Blocks.OAK_LEAVES)), ItemGroup.DECORATIONS, 64);
 
     public static final Block REDWOOD_SAPLING  = register("redwood_sapling", new ModSaplingBlock(RedwoodTree::new, Block.Properties.from(Blocks.OAK_SAPLING)), ItemGroup.DECORATIONS, 64);
