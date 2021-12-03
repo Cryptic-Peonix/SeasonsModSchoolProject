@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "schoolseasons:blocks/test_sapling"
+  }
+}

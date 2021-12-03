@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "schoolseasons:blocks/redwood_log",
+    "side": "schoolseasons:blocks/redwood_log"
+  }
+}

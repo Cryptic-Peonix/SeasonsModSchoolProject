@@ -15,6 +15,7 @@ public class ClientEventbusSubscriber {
     public static void clientSetup(FMLClientSetupEvent e) {
         RenderTypeLookup.setRenderLayer(BlockInit.REDWOOD_LEAVES, RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(BlockInit.REDWOOD_SAPLING, RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.TEST_SAPLING, RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(BlockInit.MILKMAID, RenderType.getCutout());
     }
 }

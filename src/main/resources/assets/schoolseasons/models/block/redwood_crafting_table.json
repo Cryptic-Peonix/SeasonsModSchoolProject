@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "schoolseasons:blocks/redwood_crafting_table_front",
+    "down": "schoolseasons:blocks/redwood_planks",
+    "up": "schoolseasons:blocks/redwood_crafting_table_top",
+    "north": "schoolseasons:blocks/redwood_crafting_table_front",
+    "east": "schoolseasons:blocks/redwood_crafting_table_side",
+    "south": "schoolseasons:blocks/redwood_crafting_table_side",
+    "west": "schoolseasons:blocks/redwood_crafting_table_front"
+  }
+}

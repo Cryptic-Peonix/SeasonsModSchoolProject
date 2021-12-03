@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "axis=y":  { "model": "schoolseasons:block/redwood_wood" },
+    "axis=z":   { "model": "schoolseasons:block/redwood_wood", "x": 90 },
+    "axis=x":   { "model": "schoolseasons:block/redwood_wood", "x": 90, "y": 90 }
+  }
+}
