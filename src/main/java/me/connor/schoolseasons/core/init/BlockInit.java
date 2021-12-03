@@ -13,6 +13,7 @@ import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.potion.Effects;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.event.RegistryEvent;
@@ -53,6 +54,8 @@ public class BlockInit {
     public static final Block LOAMY_GRASS_BLOCK = register("loamy_grass_block", new LoamyGrassBlock(Block.Properties.from(Blocks.GRASS_BLOCK)), ItemGroup.BUILDING_BLOCKS, 64);
 
     public static  final Block LOAMY_DIRT = register("loamy_dirt", new ModDirtBlock(Block.Properties.from(Blocks.DIRT)), ItemGroup.BUILDING_BLOCKS, 64);
+
+    public static final Block MILKMAID = register("milkmaid", new FlowerBlock(Effects.GLOWING, 10, Block.Properties.from(Blocks.AZURE_BLUET)), ItemGroup.DECORATIONS, 16);
 
     // Create Constructor and add blocks/block items to their lists
     private static Block register(String name, Block block, ItemGroup group, int itemMaxStackSize) {
