@@ -56,6 +56,8 @@ public class BlockInit {
 
     public static final Block MILKMAID = register("milkmaid", new FlowerBlock(Effects.GLOWING, 10, Block.Properties.from(Blocks.AZURE_BLUET)), ItemGroup.DECORATIONS, 16);
 
+    //TODO: Make redwood door
+
     // Create Constructor and add blocks/block items to their lists
     private static Block register(String name, Block block, ItemGroup group, int itemMaxStackSize) {
         ResourceLocation key = new ResourceLocation(Reference.MOD_ID, name);
