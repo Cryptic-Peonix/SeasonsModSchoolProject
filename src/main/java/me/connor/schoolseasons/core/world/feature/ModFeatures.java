@@ -1,15 +1,10 @@
 package me.connor.schoolseasons.core.world.feature;
 
 import me.connor.schoolseasons.Reference;
-import me.connor.schoolseasons.core.world.feature.tree.MassiveRedwoodFeature;
-import me.connor.schoolseasons.core.world.feature.tree.MassiveTreeFeatureConfig;
-import me.connor.schoolseasons.core.world.feature.tree.MassiveTreesFeature;
-import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.gen.feature.*;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.IForgeRegistry;
 
 import java.util.ArrayList;
@@ -21,8 +16,6 @@ public class ModFeatures {
     public static final List<Feature<?>> FEATURE_LIST = new ArrayList<>();
 
     //Feature
-    public static final Feature<MassiveTreeFeatureConfig> MASSIVE_REDWOOD_TREE = register(new MassiveRedwoodFeature(MassiveTreeFeatureConfig::deserializeRedwood), "massive_redwood_tree");
-
     public static final Feature<TreeFeatureConfig> TEST_TREE = register(new TreeFeature(TreeFeatureConfig::func_227338_a_), "test_feature");
 
     @SubscribeEvent
