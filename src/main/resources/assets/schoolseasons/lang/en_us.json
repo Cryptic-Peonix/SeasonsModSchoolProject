@@ -10,6 +10,12 @@
   "block.schoolseasons.loamy_dirt": "Loamy Dirt",
   "block.schoolseasons.milkmaid": "Milkmaid",
   "block.schoolseasons.redwood_wood": "Redwood Wood",
+  "block.schoolseasons.redwood_door": "Redwood Door",
+  "block.schoolseasons.redwood_stairs": "Redwood Stairs",
+  "block.schoolseasons.redwood_slab": "Redwood Slab",
+  "block.schoolseasons.redwood_wall": "Redwood Wall",
+  "block.schoolseasons.redwood_button": "Redwood Button",
+  "block.schoolseasons.redwood_pressure_plate": "Redwood Pressure Plate",
 
   "biome.schoolseasons.test_biome": "SchoolSeasons Test Biome",
   "biome.schoolseasons.redwood_forest": "Redwood Forest"

@@ -17,5 +17,6 @@ public class ClientEventbusSubscriber {
         RenderTypeLookup.setRenderLayer(BlockInit.REDWOOD_SAPLING, RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(BlockInit.TEST_SAPLING, RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(BlockInit.MILKMAID, RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(BlockInit.REDWOOD_DOOR, RenderType.getCutout());
     }
 }

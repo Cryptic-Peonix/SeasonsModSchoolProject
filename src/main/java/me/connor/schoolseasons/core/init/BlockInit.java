@@ -54,9 +54,19 @@ public class BlockInit {
 
     public static  final Block LOAMY_DIRT = register("loamy_dirt", new ModDirtBlock(Block.Properties.from(Blocks.DIRT)), ItemGroup.BUILDING_BLOCKS, 64);
 
-    public static final Block MILKMAID = register("milkmaid", new FlowerBlock(Effects.GLOWING, 10, Block.Properties.from(Blocks.AZURE_BLUET)), ItemGroup.DECORATIONS, 16);
+    public static final Block MILKMAID = register("milkmaid", new FlowerBlock(Effects.GLOWING, 10, Block.Properties.from(Blocks.AZURE_BLUET)), ItemGroup.DECORATIONS, 64);
 
-    //TODO: Make redwood door
+    public static final Block REDWOOD_STAIRS = register("redwood_stairs", new StairsBlock(REDWOOD_PLANKS::getDefaultState, Block.Properties.from(Blocks.OAK_STAIRS)), ItemGroup.BUILDING_BLOCKS, 64);
+
+    public static final Block REDWOOD_SLAB = register("redwood_slab", new SlabBlock(Block.Properties.from(Blocks.OAK_SLAB)), ItemGroup.BUILDING_BLOCKS, 64);
+
+    public static final Block REDWOOD_WALL = register("redwood_wall", new WallBlock(Block.Properties.from(REDWOOD_PLANKS)), ItemGroup.BUILDING_BLOCKS, 64);
+
+    public static final Block REDWOOD_DOOR = register("redwood_door", new ModDoorBlock(Block.Properties.from(Blocks.OAK_DOOR)), ItemGroup.DECORATIONS, 64);
+
+    public static final Block REDWOOD_BUTTON = register("redwood_button", new ModWoodenButton(Block.Properties.from(Blocks.OAK_BUTTON)), ItemGroup.REDSTONE, 64);
+
+    public static final Block REDWOOD_PRESSURE_PLATE = register("redwood_pressure_plate", new ModPressurePlate(PressurePlateBlock.Sensitivity.EVERYTHING, Block.Properties.from(Blocks.OAK_PRESSURE_PLATE)), ItemGroup.REDSTONE, 64);
 
     // Create Constructor and add blocks/block items to their lists
     private static Block register(String name, Block block, ItemGroup group, int itemMaxStackSize) {
