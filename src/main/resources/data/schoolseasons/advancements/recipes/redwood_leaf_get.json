@@ -1,12 +1,13 @@
 {
-  "parent": "schoolseasons:recipes/root",
-  "rewards": {
-    "recipes": [
-      "schoolseasons:redwood_leaf_carpet"
+  "parent": "minecraft:recipes/root",
+  "requirements": [
+    [
+      "has_item",
+      "has_the_recipe"
     ]
-  },
+  ],
   "criteria": {
-    "has_log": {
+    "has_item": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -19,16 +20,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipes": [
-          "schoolseasons:redwood_leaf_carpet"
-        ]
+        "recipe": "schoolseasons:redwood_leaf_carpet"
       }
     }
   },
-  "requirements": [
-    [
-      "has_log",
-      "has_the_recipe"
+  "rewards": {
+    "recipes": [
+      "schoolseasons:redwood_leaf_carpet"
     ]
-  ]
+  }
 }
