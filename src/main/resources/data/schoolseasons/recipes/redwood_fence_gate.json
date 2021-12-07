@@ -1,16 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    "###"
+    "$#$",
+    "$#$"
   ],
   "key": {
     "#": {
       "item": "schoolseasons:redwood_planks"
+    },
+    "$": {
+      "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "schoolseasons:redwood_wall",
-    "count": 4
+    "item": "schoolseasons:redwood_fence_gate"
   }
 }

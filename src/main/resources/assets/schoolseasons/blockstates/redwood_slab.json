@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=bottom": { "model": "schoolseasons:block/redwood_slab" },
+    "type=top": { "model": "schoolseasons:block/redwood_slab_top" },
+    "type=double": { "model": "schoolseasons:block/redwood_planks" }
+  }
+}

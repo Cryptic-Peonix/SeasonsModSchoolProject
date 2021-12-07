@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "schoolseasons:blocks/redwood_planks",
+    "top": "schoolseasons:blocks/redwood_planks",
+    "side": "schoolseasons:blocks/redwood_planks"
+  }
+}

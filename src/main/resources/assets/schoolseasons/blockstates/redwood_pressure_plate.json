@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "schoolseasons:block/redwood_pressure_plate" },
+    "powered=true": { "model": "schoolseasons:block/redwood_pressure_plate_down" }
+  }
+}

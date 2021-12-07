@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "schoolseasons:redwood_log"
+    },
+    "title": "This wood is red!",
+    "description": "Collect some redwood logs",
+    "frame": "task",
+    "hidden": false,
+    "background": "schoolseasons:textures/blocks/loamy_dirt.png"
+  },
+  "criteria": {
+    "redwood_log": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "schoolseasons:redwood_log"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "redwood_log"
+    ]
+  ]
+}

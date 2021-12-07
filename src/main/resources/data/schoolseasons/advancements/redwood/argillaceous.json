@@ -1,0 +1,23 @@
+{
+  "display": {
+    "title": "Argillaceous",
+    "description": "Get some loamy dirt",
+    "icon": {
+      "item": "schoolseasons:loamy_dirt"
+    },
+    "hidden": false
+  },
+  "parent": "schoolseasons:redwood/root",
+  "criteria": {
+    "leaf": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "schoolseasons:loamy_dirt"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "schoolseasons:redwood_planks"
+    }
+  ],
+  "result": {
+    "item": "schoolseasons:redwood_button"
+  }
+}

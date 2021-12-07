@@ -1,0 +1,23 @@
+{
+  "display": {
+    "title": "Smol Lef",
+    "description": "Obtain a Redwood Leaf Carpet",
+    "icon": {
+      "item": "schoolseasons:redwood_leaf_carpet"
+    },
+    "hidden": false
+  },
+  "parent": "schoolseasons:redwood/root",
+  "criteria": {
+    "leaf": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "schoolseasons:redwood_leaf_carpet"
+          }
+        ]
+      }
+    }
+  }
+}

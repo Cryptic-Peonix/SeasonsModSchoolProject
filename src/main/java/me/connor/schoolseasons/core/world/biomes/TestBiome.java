@@ -11,5 +11,6 @@ public class TestBiome extends Biome {
         DefaultBiomeFeatures.addCarvers(this);
         DefaultBiomeFeatures.addDefaultFlowers(this);
         DefaultBiomeFeatures.addExtraReedsPumpkinsCactus(this);
+        ModBiomeFeatures.addTestTrees(this);
     }
 }

@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "schoolseasons:test_block"
+    },
+    "title": "Hee Hee Hee Haw",
+    "description": ":)",
+    "frame": "task",
+    "hidden": true,
+    "background": "schoolseasons:textures/blocks/deeg.png"
+  },
+  "criteria": {
+    "bunn": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "schoolseasons:funny"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "bunn"
+    ]
+  ]
+}

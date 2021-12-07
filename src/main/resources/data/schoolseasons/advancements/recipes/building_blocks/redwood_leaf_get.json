@@ -1,0 +1,34 @@
+{
+  "parent": "schoolseasons:recipes/root",
+  "rewards": {
+    "recipes": [
+      "schoolseasons:redwood_leaf_carpet"
+    ]
+  },
+  "criteria": {
+    "has_log": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "schoolseasons:redwood_leaves"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipes": [
+          "schoolseasons:redwood_leaf_carpet"
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_log",
+      "has_the_recipe"
+    ]
+  ]
+}

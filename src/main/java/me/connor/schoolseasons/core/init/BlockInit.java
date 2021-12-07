@@ -68,6 +68,10 @@ public class BlockInit {
 
     public static final Block REDWOOD_PRESSURE_PLATE = register("redwood_pressure_plate", new ModPressurePlate(PressurePlateBlock.Sensitivity.EVERYTHING, Block.Properties.from(Blocks.OAK_PRESSURE_PLATE)), ItemGroup.REDSTONE, 64);
 
+    public static final Block REDWOOD_GATE = register("redwood_fence_gate", new FenceGateBlock(Block.Properties.from(Blocks.OAK_FENCE_GATE)), ItemGroup.BUILDING_BLOCKS, 64);
+
+    public static final Block DEEG = register("deeg", new Block(Block.Properties.from(Blocks.OAK_LEAVES)), ItemGroup.DECORATIONS, 1);
+
     // Create Constructor and add blocks/block items to their lists
     private static Block register(String name, Block block, ItemGroup group, int itemMaxStackSize) {
         ResourceLocation key = new ResourceLocation(Reference.MOD_ID, name);

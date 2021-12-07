@@ -1,7 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
     "###"
   ],
   "key": {
@@ -10,7 +9,7 @@
     }
   },
   "result": {
-    "item": "schoolseasons:redwood_wall",
-    "count": 4
+    "item": "schoolseasons:redwood_slab",
+    "count": 6
   }
 }

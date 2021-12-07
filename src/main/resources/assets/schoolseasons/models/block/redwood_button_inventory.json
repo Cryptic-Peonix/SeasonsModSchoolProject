@@ -1,0 +1,6 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "schoolseasons:blocks/redwood_planks"
+  }
+}
