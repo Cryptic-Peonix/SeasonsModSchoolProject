@@ -1,6 +1,7 @@
 package me.connor.schoolseasons;
 
 import me.connor.schoolseasons.core.init.BiomeInit;
+import me.connor.schoolseasons.core.init.FireInit;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.world.biome.Biome;
@@ -34,6 +35,7 @@ public class SchoolSeasons
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         BiomeInit.BIOMES.register(modEventBus);
+        FireInit.init();
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading

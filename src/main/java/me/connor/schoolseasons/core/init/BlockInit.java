@@ -13,6 +13,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.ToolType;
+import net.minecraftforge.common.extensions.IForgeBlockState;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -24,7 +25,7 @@ import java.util.List;
 @Mod.EventBusSubscriber(modid = Reference.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class BlockInit {
 
-//create block list
+    //create block list
     private static final List<Block> BLOCKS = new ArrayList<>();
 
     // Create List for BlockItems
