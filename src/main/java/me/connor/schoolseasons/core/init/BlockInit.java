@@ -13,7 +13,6 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.ToolType;
-import net.minecraftforge.common.extensions.IForgeBlockState;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -72,6 +71,8 @@ public class BlockInit {
     public static final Block REDWOOD_GATE = register("redwood_fence_gate", new FenceGateBlock(Block.Properties.from(Blocks.OAK_FENCE_GATE)), ItemGroup.BUILDING_BLOCKS, 64);
 
     public static final Block DEEG = register("deeg", new Block(Block.Properties.from(Blocks.OAK_LEAVES)), ItemGroup.DECORATIONS, 1);
+
+    public static final Block TEST = register("test", new Block(Block.Properties.from(Blocks.GLASS)), ItemGroup.DECORATIONS, 16);
 
     // Create Constructor and add blocks/block items to their lists
     private static Block register(String name, Block block, ItemGroup group, int itemMaxStackSize) {

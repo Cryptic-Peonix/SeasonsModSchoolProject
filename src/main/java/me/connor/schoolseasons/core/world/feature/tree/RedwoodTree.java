@@ -18,12 +18,4 @@ public class RedwoodTree extends Tree {
         return Feature.NORMAL_TREE.withConfiguration(ModBiomeFeatures.REDWOOD_TREE_CONFIG);
     }
 
-    /*
-    @Nullable
-    @Override
-    protected ConfiguredFeature<MassiveTreeFeatureConfig, ?> getMassiveTreeFeature(Random rand) {
-        return ModFeatures.MASSIVE_REDWOOD_TREE.withConfiguration(ModBiomeFeatures.MASSIVE_REDWOOD_TREE_CONFIG);
-    }
-    */
-
 }
